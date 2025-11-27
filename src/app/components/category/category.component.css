@@ -1,0 +1,135 @@
+/* Container for all category boxes */
+.category-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Categories section */
+.categories {
+  width: 75%;
+  height: 250px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  text-align: center;
+  margin: 0 auto;
+  gap: 30px;              
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  animation: dropDown 0.8s ease-out forwards;
+
+  background: linear-gradient(to bottom, #B48050, #5C3D2F);
+  position: relative; 
+}
+
+/* Drop down animation */
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Single category box */
+.category-box {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  background-color: #F9E7B0;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  animation: dropDown 0.8s ease-out forwards;
+}
+
+/* Animation delays for boxes for nice stagger effect */
+.category-box:nth-child(4) {
+  animation-delay: 0.1s;
+}
+.category-box:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.category-box:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.category-box:nth-child(1) {
+  animation-delay: 0.7s;
+}
+
+/* Category box image */
+.category-box img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+}
+
+/* Category box title */
+.category-box h3 {
+  font-family: 'El Messiri', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0;
+  color: #000000;
+  position: relative;
+  bottom: 30px;
+}
+
+/* Category box subtitle */
+.category-box h6 {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  margin: 0;
+  color: #000000;
+  position: relative;
+  bottom: 30px;
+}
+
+
+
+/* Categories section header */
+.categories h1 {
+  color: rgb(255, 255, 255);
+  font-family: 'El Messiri', sans-serif;
+  font-size: 25px;
+  margin-top: 20px;
+}
+@media (max-width: 412px) {
+  .categories {
+    margin-top: 50px; 
+    margin-bottom: 1200px;
+    padding-top: 0;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .categories h1 {
+  
+  margin-top: 20px;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .categories {
+    margin-top: 50px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 600px;
+  }
+
+  .categories h1 {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

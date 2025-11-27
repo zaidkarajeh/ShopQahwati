@@ -1,0 +1,102 @@
+<!-- Navbar: Main navigation bar of the website -->
+<nav class="navbar navbar-expand-lg" [class.scrolled]="isScrolled" dir="rtl">
+  <div class="container-fluid">
+
+    <!-- Brand: Website name or logo -->
+    <a class="navbar-brand" (click)="scrollTo('home')" >قهوتي</a>
+
+    <!-- Toggler button: Visible on small screens to toggle navbar -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content: Navbar links and icons -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+      <!-- Navbar links: Main navigation links -->
+      <div class="navbar-nav">
+        <a class="nav-link active" (click)="scrollTo('home')">الصفحة الرئيسية</a>
+        <a class="nav-link" (click)="scrollTo('products')">المنتجات</a>
+        <a class="nav-link" (click)="scrollTo('category')">الفئات</a>
+        <a class="nav-link" (click)="scrollTo('about')">من نحن</a>
+      </div>
+
+      <!-- Navbar icons: Cart, search, and user icons -->
+      <div class="navbar-icons d-flex me-auto">
+
+        <!-- Cart wrapper: Contains shopping cart icon and dropdown -->
+        <div class="cart-wrapper">
+          <!-- Cart icon with click event -->
+          <i class="fa-solid fa-bag-shopping" (click)="toggleCart()"></i>
+
+          <!-- Badge: Displays total number of items in cart -->
+          <span class="badge" *ngIf="totalItems > 0">{{ totalItems }}</span>
+
+          <!-- Cart box: Dropdown showing cart items -->
+          <div class="cart-box" *ngIf="showCart">
+            <h3>سلة المشتريات</h3>
+            <hr>
+
+            <!-- Scrollable container for cart items -->
+            <div class="cart-items-inner">
+              <!-- Each cart item -->
+              <div *ngFor="let item of cartItems" class="cart-item">
+                <img [src]="item.img" alt="">
+
+                <!-- Item info: Title, price, quantity controls, remove button -->
+                <div class="info">
+                  <h4>{{ item.title }}</h4>
+                  <p class="price">
+                    <span class="amount">{{ item.price }}</span>
+                    <span class="currency">JOD</span>
+                  </p>
+
+                  <!-- Quantity controls and remove button -->
+                  <div class="controls-wrapper">
+                    <div class="qty-controls">
+                      <button (click)="dec(item.id)">-</button>
+                      <span>{{ item.qty }}</span>
+                      <button (click)="inc(item.id)">+</button>
+                    </div>
+                    <i class="fa-regular fa-trash-can" (click)="remove(item.id)"></i>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+
+            <!-- Message when cart is empty -->
+            <p class="empty-basket" *ngIf="cartItems.length === 0">السلة فارغة</p>
+            <hr>
+
+            <!-- Cart total -->
+            <h3 class="total" *ngIf="cartItems.length">
+              <span class="currency">المجموع :</span>
+              <span class="amount">{{ total }}</span>
+              <span class="currency">JOD</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Search icon -->
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <!-- User icon -->
+        <i class="fa-regular fa-user"></i>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Small horizontal line below navbar -->
+ <div class="small-line" >
+      <hr>
+
+ </div>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">

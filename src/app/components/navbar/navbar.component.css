@@ -1,0 +1,236 @@
+/* Navbar container styling */
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+ position: fixed;
+ top: 0;
+ right: 5%;
+ z-index: 1000;
+
+  background: transparent;
+  backdrop-filter: none;
+  transition: all 0.3s ease;
+}
+.navbar.scrolled {
+  backdrop-filter: blur(8px);
+}
+
+/* Navbar brand/logo styling */
+.navbar-brand {
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 20px;
+  cursor: pointer;
+  
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+  font-family: "IBM Plex Arabic", sans-serif;
+  font-size: 18px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* Navbar icons styling */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 25px;
+  color: black;
+  gap: 20px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+/* Small horizontal line styling */
+.small-line hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  width: 90%;
+
+  position: fixed;
+  top:10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+ 
+}
+
+/* Cart wrapper positioning */
+.cart-wrapper {
+  position: relative;
+}
+
+/* Cart box dropdown styling */
+.cart-box {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 250px;
+  background: linear-gradient(#935027, #F9E7B0);
+  padding: 15px;
+  border-radius: 30px 50px 50px 100px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+/* Show cart box on hover */
+.cart-wrapper:hover .cart-box {
+  display: block;
+}
+
+/* Cart box header styling */
+.cart-box h3 {
+  color: white;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+/* Scrollable cart items container */
+.cart-items-inner {
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar styling */
+.cart-items-inner::-webkit-scrollbar {
+  width: 2px;
+}
+
+.cart-items-inner::-webkit-scrollbar-track {
+  background: transparent;
+  direction: ltr;
+}
+
+.cart-items-inner::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 60px !important;
+}
+
+/* Individual cart item styling */
+.cart-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* Cart item image styling */
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 30px 50px 50px 100px;
+  border: 1px solid white;
+}
+
+/* Cart item info text styling */
+.info h4 {
+  color: white;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+/* Cart item price styling */
+.price {
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.price .amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.price .currency {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/* Cart total styling */
+.total {
+  font-family: Arial, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.total .amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.total .currency {
+  font-size: 14px;
+  margin-left: 5px;
+  color: rgb(0, 0, 0);
+}
+
+/* Controls wrapper styling */
+.controls-wrapper {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: white;
+}
+
+/* Quantity controls styling */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 30px 50px 50px 100px;
+  height: 30px;
+}
+
+.qty-controls button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+/* Trash/delete icon styling */
+.fa-trash-can {
+  font-size: 23px;
+  cursor: pointer;
+}
+
+/* Horizontal rule styling */
+hr {
+  color: white;
+}
+
+/* Empty basket text styling */
+.empty-basket {
+  color: white;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+/* Sale box styling */
+.sale-box {
+  background: #ffefc4;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Badge styling */
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}

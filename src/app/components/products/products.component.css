@@ -1,0 +1,418 @@
+/* Container for all product boxes */
+.products-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  min-height: 500px;
+  margin: auto;
+  background-color: #B3956B;
+  margin-top: 200px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  gap: 25px;
+}
+
+/* First product box styling */
+.first-box {
+  width: 250px;
+  height: 350px;
+  background-color: #E1991D;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+/* Image inside first box */
+.first-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Heading inside first box */
+.first-box h3 {
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: 'El Messiri', sans-serif;
+  cursor: pointer;
+}
+
+/* Second product box styling */
+.second-box {
+  width: 250px;
+  height: 350px;
+  background-color: #F9E7B0;
+  position: absolute;
+  right: 520px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/assets/images/coffeetime.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Image inside second box */
+.second-box img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+/* Heading inside second box */
+.second-box h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'El Messiri', sans-serif;
+  cursor: pointer;
+  color: black;
+}
+
+/* Icon container styling */
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Text inside icon container */
+.icon p {
+  font-size: 25px;
+  color: #E1991D;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Icon styling */
+.icon i {
+  font-size: 25px;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+}
+
+.icon i:hover {
+  color: #E1991D;
+}
+
+/* Third product box styling */
+.third-box {
+  width: 250px;
+  height: 350px;
+  background-color: #F9E7B0;
+  position: absolute;
+  right: 260px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/assets/images/coffeetime.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Image inside third box */
+.third-box img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+/* Heading inside third box */
+.third-box h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'El Messiri', sans-serif;
+  cursor: pointer;
+  color: black;
+}
+
+/* Fourth product box styling */
+.fourth-box {
+  width: 250px;
+  height: 350px;
+  background-color: #F9E7B0;
+  position: absolute;
+  right: 780px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/assets/images/coffeetime.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Image inside fourth box */
+.fourth-box img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+/* Heading inside fourth box */
+.fourth-box h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'El Messiri', sans-serif;
+  cursor: pointer;
+  color: black;
+}
+
+/* Fifth product box styling */
+.five-box {
+  width: 250px;
+  height: 350px;
+  background-color: #F9E7B0;
+  position: absolute;
+  right: 1040px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  background-image: url('/assets/images/coffeetime.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Image inside fifth box */
+.five-box img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+/* Heading inside fifth box */
+.five-box h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'El Messiri', sans-serif;
+  cursor: pointer;
+  color: black;
+}
+
+/* Price styling */
+.price {
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+.price .big {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.price .small {
+  font-size: 16px;
+}
+
+.price .currency {
+  font-size: 12px;
+  vertical-align: baseline;
+  margin-left: 2px;
+}
+
+/* Order of boxes for flex purposes */
+.five-box { order: 5; }
+.fourth-box { order: 4; }
+.third-box { order: 3; }
+.second-box { order: 2; }
+.first-box { order: 1; }
+
+/* Small round box for timer or label */
+.box {
+  width: 225px;
+  height: 75px;
+  margin: auto;
+  border-radius: 50px;
+  border: 5px double #E1991D;
+  margin-top: 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image inside timer box */
+.box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Container for each time unit */
+.time-unit {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Number inside time unit */
+.time-unit span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #E1991D;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Label under the number */
+.time-unit small {
+  font-size: 12px;
+  color: #E1991D;
+  font-family: 'El Messiri', sans-serif;
+}
+
+/* Separator between time units */
+.separator {
+  color: rgb(194, 2, 2);
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+}
+
+/* Marquee container for scrolling text */
+.marquee-wrap {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+/* Scrolling text styling */
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  line-height: 1.6;
+  transform: translateX(0);
+  animation: none;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  cursor: pointer;
+}
+
+/* Start scrolling on hover */
+.marquee-wrap:hover .marquee {
+  animation: scroll 10s linear infinite;
+}
+
+/* Marquee keyframes */
+@keyframes scroll {
+  100% { transform: translateX(100%); }
+  0% { transform: translateX(0); }
+}
+
+/* Add message styling */
+.add-msg {
+  padding: 5px 10px;
+  background-color: #E1991D;
+  color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  text-align: center;
+  animation: fade 0.5s ease-in-out;
+}
+
+/* Fade animation keyframes */
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive styling for screens smaller than 915px */
+@media (max-width: 915px) {
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 450px;
+    gap: 25px;
+    align-items: center;
+    padding-top: 50px;
+    margin: auto;
+  }
+
+  .second-box,
+  .third-box,
+  .fourth-box,
+  .five-box {
+    position: static !important;
+    width: 90% !important;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .first-box {
+    margin-top: 30px;
+    position: static !important;
+    width: 90% !important;
+    height: 200px;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+  }
+}
+

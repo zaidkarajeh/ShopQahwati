@@ -1,0 +1,122 @@
+<!-- Products section -->
+<div class="products-container">
+
+  <div class="first-box">
+      <img src="assets/images/coffeetime.png" alt="Coffee" />
+    <!-- محتويات البوكس -->
+     <h3>منتجات المخفضة</h3>
+    <!-- home.component.html -->
+<div class="box" *ngIf="showBox">
+
+  <div class="time-unit">
+    <span>{{ days }}</span>
+    <small>يوم</small>
+  </div>
+  <span class="separator">|</span>
+
+  <div class="time-unit">
+    <span>{{ hours }}</span>
+    <small>ساعة</small>
+  </div>
+  <span class="separator">|</span>
+
+  <div class="time-unit">
+    <span>{{ minutes }}</span>
+    <small>دقيقة</small>
+  </div>
+  <span class="separator">|</span>
+
+  <div class="time-unit">
+    <span>{{ seconds }}</span>
+    <small>ثانية</small>
+  </div>
+</div>
+
+
+
+  </div>
+
+ <div class="second-box" [ngStyle]="{'background-image': 'url(/assets/images/coffeetime.png)'}">
+
+  <!-- الرسالة داخل نفس المنتج -->
+  <div class="add-msg" *ngIf="messages['p1']">
+    المنتج أضيف إلى السلة!
+  </div>
+  <img src="assets/images/Product1.png" alt="Coffee" />
+  <h3>حبوب روبوستا</h3>
+
+  <div class="marquee-wrap">
+    <div class="marquee">
+      قوة وطاقة في كل فنجان! حبوب روبوستا تمنحك مذاقًا غنيًا ومرّ قليلًا، مثالية لمحبي الإسبريسو القوي.
+    </div>
+  </div>
+
+  <div class="icon">
+    <p class="price">
+      <span class="big">4</span><span class="small">.00</span> <span class="currency"> JOD</span>
+    </p>
+    <i class="fa-solid fa-cart-arrow-down"  
+       (click)="addProduct('p1', 'حبوب روبوستا', 4.00, 'assets/images/Product1.png')">
+    </i>
+  </div>
+
+  
+</div>
+
+
+
+  <div class="third-box" [ngStyle]="{'background-image': 'url(/assets/images/coffeetime.png)'}" >
+    <div class="add-msg" *ngIf="messages['p2']">
+    المنتج أضيف إلى السلة!
+  </div>
+   <img src="assets/images/Product2.png" alt="Coffee" />
+      <h3>حبوب أرابيكا</h3>
+      <div class="marquee-wrap">
+  <div class="marquee">
+النعومة والرائحة العطرية الفاخرة تلتقيان في كل حبة. مثالية للقهوة الصباحية أو جلسات الاسترخاء مع الأصدقاء.  
+</div>
+</div>
+      <div class="icon">
+<p class="price">
+  <span class="big">4</span><span class="small">.00</span> <span class="currency"> JOD</span>
+</p>        <i class="fa-solid fa-cart-arrow-down" (click)="addProduct('p2', 'حبوب أرابيكا', 4.00, 'assets/images/Product2.png')"></i>      </div>
+  </div>
+
+  <div class="fourth-box" [ngStyle]="{'background-image': 'url(/assets/images/coffeetime.png)'}">
+    <div class="add-msg" *ngIf="messages['p3']">
+    المنتج أضيف إلى السلة!
+  </div>
+         <img src="assets/images/Product3.png" alt="Coffee" />
+      <h3>قهوة مطحونة</h3>
+      <div class="marquee-wrap">
+  <div class="marquee">
+طازجة ومطحونة بعناية للحفاظ على النكهة. فنجانك سيحتوي على كل الأريج والغنى الذي تحبه.  
+</div>
+</div>
+      <div class="icon">
+<p class="price">
+  <span class="big">6</span><span class="small">.75</span> <span class="currency"> JOD</span>
+</p>        <i class="fa-solid fa-cart-arrow-down" (click)="addProduct('p3', 'قهوة مطحونة', 6.75, 'assets/images/Product3.png')" ></i>      </div>
+  </div>
+ <div class="five-box" [ngStyle]="{'background-image': 'url(/assets/images/coffeetime.png)'}">
+  <div class="add-msg" *ngIf="messages['p4']">
+    المنتج أضيف إلى السلة!
+  </div>
+    <img src="assets/images/Product4.png" alt="Coffee" />
+      <h3>كبسولات القهوة</h3>
+      <div class="marquee-wrap">
+  <div class="marquee">
+سريعة التحضير وسهلة الاستخدام لكل الأجهزة. كل كبسولة تحتوي على مذاق مثالي لتبدأ يومك بنشاط.  
+</div>
+</div>
+      <div class="icon">
+<p class="price">
+  <span class="big">5</span><span class="small">.50</span> <span class="currency"> JOD</span>
+</p>       <i class="fa-solid fa-cart-arrow-down" (click)="addProduct('p4', 'كبسولات القهوة', 5.50, 'assets/images/Product4.png')" ></i>      </div>
+  </div>
+</div>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
