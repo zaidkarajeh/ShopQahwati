@@ -1,27 +1,26 @@
-# Qahwati
+# ShopQahwati – Coffee Shop
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+**ShopQahwati** is a web-based coffee shop application built with Angular, featuring a fully functional shopping cart and local data storage. It is fully responsive, working seamlessly on desktop, tablet, and mobile devices.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Product Browsing:** View all coffee products with details like title, price, and images.  
+- **Shopping Cart:** Add products, update quantities, and calculate totals.  
+- **Local Storage:** All data is stored in the browser for a smooth experience without a backend.  
+- **Responsive Design:** Works perfectly on all screen sizes.  
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Frontend:** Angular 16  
+- **Storage:** Local Storage  
+- **Styling:** CSS, Bootstrap  
 
-## Build
+## How to Run
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone the repository, install dependencies, and run the project:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+git clone https://github.com/zaidkarajeh/ShopQahwati.git
+cd ShopQahwati
+npm install
+ng serve
